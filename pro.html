@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PathFinder - AI-Powered Career-Specific Microlearning</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #404040;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    section {
+      padding: 40px 20px;
+      margin: 20px 0;
+      background-color: #e8e8e8;
+    }
+
+    h2 {
+      color: #404040;
+    }
+
+    .container {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    footer {
+      background-color: #404040;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container input,
+    .form-container select,
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .form-container button {
+      background-color: #404040;
+      color: white;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: #575757;
+    }
+
+    .grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .grid > div {
+      flex: 1;
+      min-width: 250px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta {
+      text-align: center;
+      background-color: #404040;
+      color: white;
+      padding: 20px;
+    }
+
+    .cta button {
+      background-color: #fff;
+      color: #404040;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background-color: #e2e6ea;
+    }
+
+    .testimonial {
+      background-color: #f1f1f1;
+      padding: 15px;
+      border-left: 5px solid #404040;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+
+    .demo-box {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-left: 5px solid #404040;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+
+    .about {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive Styles */
+    @media screen and (max-width: 768px) {
+      .container {
+        width: 90%;
+      }
+
+      header {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        padding: 10px;
+      }
+
+      .grid {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      footer {
+        padding: 15px;
+      }
+
+      .form-container {
+        padding: 15px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      nav a {
+        padding: 8px;
+      }
+
+      .form-container input,
+      .form-container select,
+      .form-container button {
+        padding: 8px;
+        margin: 8px 0;
+      }
+
+      .cta button {
+        padding: 8px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PathFinder</h1>
+    <p>AI-Powered Career-Specific Microlearning for Tier 2/3 Cities</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#problem">Problem</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#register">Register</a>
+    <a href="#login">Login</a>
+    <a href="#courses">Courses</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="container">
+      <h2>Welcome to PathFinder</h2>
+      <p>PathFinder is a mobile-first, AI-powered platform offering career-specific microlearning for youth in Tier 2 and 3 cities, bridging the gap between education and employability.</p>
+      <div class="cta">
+        <button>Start Learning</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section id="problem">
+    <div class="container">
+      <h2>What Problems Are We Solving?</h2>
+      <div class="grid">
+        <div>
+          <h3>For Learners</h3>
+          <ul>
+            <li>Generic content not aligned with job markets</li>
+            <li>Language barriers</li>
+            <li>Expensive courses</li>
+            <li>No mentorship or interview guidance</li>
+            <li>Poor internet compatibility with video-heavy content</li>
+          </ul>
+        </div>
+        <div>
+          <h3>For Platform Builders</h3>
+          <ul>
+            <li>Frequent updates required</li>
+            <li>Translation issues</li>
+            <li>Difficulty in maintaining affordability</li>
+            <li>Offline compatibility is a must</li>
+            <li>AI personalization is costly</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits">
+    <div class="container">
+      <h2>Why PathFinder Works</h2>
+      <div class="grid">
+        <div>
+          <h3>For Consumers</h3>
+          <ul>
+            <li>Quick access to real-world job skills</li>
+            <li>Accessible via smartphones with low data usage</li>
+            <li>Micro-learning modules (5–10 minutes)</li>
+            <li>Courses available in regional languages</li>
+            <li>Practical skills valued by employers</li>
+          </ul>
+        </div>
+        <div>
+          <h3>For Platform Owners</h3>
+          <ul>
+            <li>Huge demand for career-focused learning</li>
+            <li>Opportunity to build a leading brand</li>
+            <li>Valuable data to guide growth</li>
+            <li>Appeals to impact investors</li>
+            <li>Hybrid model collaboration with local training centers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register Section -->
+  <section id="register">
+    <div class="container form-container">
+      <h2>Create Your Free Account</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="text" placeholder="Mobile Number" required />
+        <select>
+          <option value="customer_support">Customer Support</option>
+          <option value="digital_marketing">Digital Marketing</option>
+          <option value="logistics_management">Logistics Management</option>
+          <option value="basic_coding">Basic Coding</option>
+        </select>
+        <input type="password" placeholder="Password" required />
+        <input type="password" placeholder="Confirm Password" required />
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login">
+    <div class="container form-container">
+      <h2>Welcome Back</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <p><a href="#">Forgot Password?</a></p>
+        <p>New user? <a href="#register">Register</a></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses">
+    <div class="container">
+      <h2>Choose Your Career Path</h2>
+      <div class="grid">
+        <div>
+          <h3>Digital Marketing</h3>
+          <p>Learn the skills required to excel in digital marketing, including SEO, SEM, and social media marketing.</p>
+        </div>
+        <div>
+          <h3>Customer Support</h3>
+          <p>Master the art of customer service with skills like communication, troubleshooting, and empathy.</p>
+        </div>
+        <div>
+          <h3>Logistics Management</h3>
+          <p>Gain expertise in logistics, including inventory control, supply chain management, and transportation.</p>
+        </div>
+        <div>
+          <h3>Basic Coding</h3>
+          <p>Learn basic coding concepts in HTML, CSS, and JavaScript to kickstart your career in tech.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>PathFinder is dedicated to providing career-focused micro-learning to youth in Tier 2 and 3 cities. We aim to bridge the skill gap in regional markets through practical and affordable education.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form class="form-container">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>PathFinder &copy; 2025</p>
+    <p>Contact us at: support@pathfinder.com</p>
+    <p>Social Media: [Links Here]</p>
+  </footer>
+</body>
+</html>
